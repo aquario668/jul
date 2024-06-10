@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry</title>
+    <link rel="stylesheet" href="sorry.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black&display=swap" rel="stylesheet">
+    
+
+</head>
+<body>
+    <header style="position: relative; z-index: 100; top: -400px;">
+    <h1 class="logo-1"><i class="bi bi-arrow-through-heart"></i> LO SIENTO JULIA <i class="bi bi-arrow-through-heart"></i></h1>
+    
+</header>
+<audio autoplay src="Happy Together.mp3"></audio>
+<div style="position: absolute; color: aliceblue;  bottom: auto; min-width: 50px; max-width: 500px;   z-index: 102; top: 250px;">
+    <h2  style=" position: relative;">Querida Julia,</h2>
+    <div style="position: relative;left: -180px;">
+<p >Espero que este mensaje te encuentre bien. Quiero comenzar expresándote cuánto lamento los tropiezos que he tenido en nuestra amistad hasta ahora. Me doy cuenta de que he cometido errores y quiero disculparme sinceramente por cualquier dolor o desepcion que te haya causado.</p> 
+
+   <p>He reflexionado mucho sobre nuestras interacciones pasadas y me doy cuenta de que, en ocasiones, he sido impulsivo, inseguro y poco claro en mis acciones y palabras. Reconozco que no siempre he estado a la altura de tus expectativas ni he sido la mejor versión de mí mismo.</p> 
+    
+   <p>Hoy, escribo esta carta con la determinación de cambiar eso. Quiero empezar de nuevo, de una manera más genuina y auténtica. Quiero dejar atrás cualquier excusa. Quiero conocerte verdaderamente, entender quién eres, cuáles son tus sueños, tus temores, tus pasiones.</p>
+    
+  <p>No busco nada más que tu amistad en este momento. Me gustaría que pudiéramos construir una relación basada en el respeto, la confianza y la honestidad. Si el destino lo permite, estoy abierto a explorar algo más profundo en el futuro, pero por ahora, mi principal deseo es fortalecer nuestra conexión como amigos.</p>
+    
+   <p>Entiendo que estas palabras pueden sonar como promesas vacías si no van acompañadas de acciones concretas. Por eso, estoy comprometido a demostrarte, día a día, que estoy dispuesto a aprender de mis errores y a crecer como persona. Quiero enfrentar este nuevo comienzo con madurez y responsabilidad.</p>
+    
+   <p>Julia, espero que puedas perdonarme por mis errores pasados y que estés dispuesta a darme otra oportunidad. Estoy aquí, con el corazón abierto, listo para empezar de nuevo y construir algo significativo juntos.</p>
+  </div>
+   <h4  >-- Con todo mi cariño y admiración, Brandon</h4>
+<a  style=" position: relative;" href="flower.html">picale aqui para ver algo especial &rarr;</a>
+</div>
+
+      <css-doodle id="doodle" style="position: fixed;">
+        :doodle {
+          @grid: 8x1 / 50vmin;
+        }
+      
+        @size: calc(100% - @i() * 3%);
+        @place-cell: center;
+        @shape: heart;
+        overflow: hidden;
+        
+        :after {
+          content: '';
+          @size: calc(100% - 5px);
+          @shape: heart;
+          background: var(--bg);
+          z-index: 1;
+        }
+      
+        :before {
+          content: '';
+          position: absolute;
+          @size: 200%;
+          background: conic-gradient(
+            @pd(#78E7D4, #E3383F, #EFF4DD, #F2A341) @p(10%, 40%),
+            transparent 0
+          );
+          animation: cycle @r(3s, 5s, .1) linear infinite;
+          animation-delay: -@r(8s);
+          z-index: 0;
+        }
+      
+        @keyframes cycle {
+          to { transform: rotate(1turn); }
+        }
+      </css-doodle>
+      
+      <!-- partial -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/css-doodle/0.4.9/css-doodle.min.js'></script><script  src="sorry.js"></script>
+      
+</body>
+</html>
