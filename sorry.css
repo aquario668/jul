@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Love+Ya+Like+A+Sister&display=swap');
+:root {
+    --bg: #051626;
+    --shadow-color: #ff9efd;
+    --shadow-color-light: rgb(255, 131, 245);
+  }
+  
+  html, body { 
+    height: 100%; 
+    margin: 0;
+    
+  }
+  
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg);
+    margin: 0;
+  }
+/* lo siento */
+h1{
+    margin: calc(50vh - 40px) auto 0 auto;
+    font-size: 65px;
+    text-transform: uppercase;
+    font-family: "Archivo Black", "Archivo", sans-serif;
+    font-weight: normal;
+    height: auto;
+    text-align: center;
+    color: aliceblue;
+  animation: neon .08s ease-in-out infinite alternate;
+
+  }
+  
+ 
+  /* lluvia de corazones */
+  .heart{
+    position: fixed;
+    top: -1vh;
+    font-size: 2rem;
+    transform: translateY(0);
+    animation: fall 3s linear forwards;
+  }
+  
+  @keyframes fall {
+    to{transform: translateY(105vh);}
+  }
+  h2,p,h4{
+    font-family: "Love Ya Like A Sister", cursive;
+  font-weight: 400;
+  font-style: normal;
+  animation: neo .08s ease-in-out infinite alternate;
+ 
+  }
+  p{
+   
+    position: relative;
+    padding-top: 3px;
+    right: -180px;
+  }
+  @keyframes neo {
+    from {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.92),
+      0 0 30px rgba(202,228,225,0.34),
+      0 0 12px rgba(30,132,242,0.52),
+      0 0 21px rgba(30,132,242,0.92),
+      0 0 34px rgba(30,132,242,0.78),
+      0 0 54px rgba(30,132,242,0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(202,228,225,0.98),
+      0 0 30px rgba(202,228,225,0.42),
+      0 0 12px rgba(30,132,242,0.58),
+      0 0 22px rgba(30,132,242,0.84),
+      0 0 38px rgba(30,132,242,0.88),
+      0 0 60px rgba(30,132,242,1);
+    }
+  }
+  @keyframes neon {
+    from {
+      text-shadow:
+      0 0 6px rgba(228, 202, 228, 0.92),
+      0 0 30px rgba(228, 202, 227, 0.34),
+      0 0 12px rgba(242, 30, 238, 0.52),
+      0 0 21px rgba(242, 30, 221, 0.92),
+      0 0 34px rgba(221, 30, 242, 0.78),
+      0 0 54px rgba(242, 30, 224, 0.92);
+    }
+    to {
+      text-shadow:
+      0 0 6px rgba(225, 202, 228, 0.98),
+      0 0 30px rgba(228, 202, 228, 0.42),
+      0 0 12px rgba(242, 30, 221, 0.58),
+      0 0 22px rgba(242, 30, 235, 0.84),
+      0 0 38px rgba(242, 30, 231, 0.88),
+      0 0 60px rgb(242, 30, 231);
+    }
+  }
+  
+  a{
+    font-family: "Love Ya Like A Sister", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: #828282;
+	text-decoration: none;
+	
+	&:focus,
+	&:hover {
+    color: #c6e2ff;
+		text-shadow:
+    0 0 2px rgba(202,228,225,0.92),
+    0 0 10px rgba(202,228,225,0.34),
+    0 0 4px rgba(30,132,242,0.52),
+    0 0 7px rgba(30,132,242,0.92),
+    0 0 11px rgba(30,132,242,0.78),
+    0 0 16px rgba(30,132,242,0.92);
+	}
+  }
+  div{
+    justify-content: center;
+    align-items: center;
+    display: block;
+  }
